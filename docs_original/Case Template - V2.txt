@@ -1,0 +1,15 @@
+IT / Customer / Dealer: [Mention who initiated the call]
+Incoming Caller Number: [Capture the number from which the call was received]
+Alternate Contact Number: [Ensure an alternate number is recorded to reach the customer if the primary is unreachable]
+Issue Description & Duration: [Clearly describe the reported issue in detail, including how long the issue has been occurring]
+
+Troubleshooting Performed:
+	• [Step 1]
+	• [Step 2]
+	• [Step 3]
+
+Any Additional Issue Identified: [Document any additional issues reported by the customer]
+Resolution Provided: [Briefly state the resolution shared with the customer]
+Further Action Required: [Mention any next steps or action clearly]
+Copy-Paste PRT Recommendation (For WO cases only):
+Rescue Lens Used: [Mention 'Yes' or 'No']

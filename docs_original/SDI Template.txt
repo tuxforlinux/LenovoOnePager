@@ -1,0 +1,10 @@
+*****************Service Delivery Instructions (SDI) & Shipping Instructions (SI) Template*****************
+
+SDI Template:
+ 
+Special Instructions for the Engineer : (example: Diagnose the system and match the barcode number before replacing the part. After replacement, check unit and ports functionality. Contact FS if any additional issues are found)
+Alternate Contact Number : 
+Preferred Customer Day & Time Slot :
+Google Plus Code :
+Cell Phone Allowed at Premises: Allowed/Not Allowed
+
