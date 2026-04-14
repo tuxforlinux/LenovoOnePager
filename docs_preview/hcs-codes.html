@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HCS Codes.xlsx</title>
+<style>
+:root {
+  --lenovo-red:#e2231a;
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --text:#202124;
+  --muted:#5f6368;
+  --border:#e5e7eb;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+header{position:sticky;top:0;background:linear-gradient(135deg,#111,#2a2d33);color:#fff;padding:16px 24px;border-bottom:4px solid var(--lenovo-red);z-index:5}
+header h1{margin:0;font-size:20px}
+main{max-width:1100px;margin:24px auto;padding:0 18px 40px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:0 10px 35px rgba(0,0,0,.06)}
+h2{font-size:18px;margin:26px 0 10px;color:#111}
+p{margin:0 0 12px}
+pre{white-space:pre-wrap;background:#0f172a;color:#e5e7eb;padding:18px;border-radius:14px;overflow:auto}
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:14px;background:#fff}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--border);border-right:1px solid var(--border);text-align:left;vertical-align:top}
+th{position:sticky;top:0;background:#f8fafc}
+.sheet{margin-bottom:24px}
+.note{color:var(--muted);font-size:14px;margin-bottom:14px}
+</style>
+</head>
+<body>
+<header><h1>HCS Codes.xlsx</h1></header>
+<main>
+  <div class="card">
+    <div class="note">Preview generated for in-page viewing in the Lenovo One Pager.</div>
+    <div class='sheet'>
+<h2>Sheet2</h2>
+<div class='table-wrap'><table>
+<tr><th>Scenario</th><th>Code</th><th>Usage Scenario</th></tr>
+<tr><td>ADP / MDOA / SID / FOC</td><td>HCS001</td><td>When we are releasing a work order under ADP/Machine DOA.</td></tr>
+<tr><td>Invalid Recommendation</td><td>HCS002</td><td>When the reported issue does not match the recommendation provided by HCS. Example: The customer reported that a few keys were not working, but HCS recommended replacing the Wi-Fi card.</td></tr>
+<tr><td>Billable Case</td><td>HCS003</td><td>Work orders where we provide chargeable service (sending Labor/parts on a chargeable basis).</td></tr>
+<tr><td>Escalation Case / Labor Only</td><td>HCS004</td><td>Any type of escalation raised due to the specific situation and technical diagnosis or a Labor only call</td></tr>
+<tr><td>Hinge/QI  ssue (Known Tips)</td><td>HCS005</td><td>Any part dispatch based on QI tips, such as hinges.</td></tr>
+<tr><td>Multiple Issue</td><td>HCS006</td><td>The customer reported multiple issues; however, PRT is providing a recommendation for only one symptom, and no recommendations are appearing for the others.</td></tr>
+<tr><td>No Recommendation Available (Message: No historical data available)</td><td>HCS007</td><td>HCS is not providing any recommendations at all for the reported issue.</td></tr>
+<tr><td>RRR WO (2nd or more WO)</td><td>HCS008</td><td>In repeat repair cases where the issue remains unresolved even after the previous WO part replacement.</td></tr>
+<tr><td>HCS Recommendation available and Followed (85% and above only)</td><td>HCS010</td><td>Cases where HCS is providing recommendations &gt;= 85%.</td></tr>
+<tr><td>Invalid Recommendation - Customer confirmed failure part via swap test</td><td>HCS011</td><td>HCS is recommending a specific part; however, the customer performed a part swap and identified a different part as faulty compared to the HCS recommendation.</td></tr>
+<tr><td>HCS /Tool Error</td><td>HCS013</td><td>HCS is not working and is displaying an error.</td></tr>
+<tr><td>HCS Recommendation from 1% - 84%</td><td>HCS014</td><td>HCS is recommending the part; however, the confidence level is between 1% and 84%.</td></tr>
+<tr><td>Accessories(Dock, External KB and Mouse, etc)</td><td>HCS016</td><td>Commercial Only* – Applicable for Option Claims WO Process.</td></tr>
+</table></div></div>
+  </div>
+</main>
+</body>
+</html>
