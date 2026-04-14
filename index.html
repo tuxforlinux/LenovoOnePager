@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenovo One Pager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="bg-grid"></div>
+
+  <div class="page-shell">
+    <header class="hero reveal">
+      <div class="hero-glow"></div>
+      <div class="brand">
+        <div class="logo-box">LENOVO</div>
+        <div>
+          <div class="eyebrow">Smart Internal Access Hub</div>
+          <h1>LENOVO ONE PAGER</h1>
+          <p>Introduced by the IN CEC Training Team</p>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-badge">
+          Faster access to tools, docs, policies, and support links
+          <small>Premium UI • Search enabled • Static-host ready</small>
+        </div>
+        <div class="hero-pills">
+          <span>Quick Links</span>
+          <span>Live Search</span>
+          <span>In-page Previews</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="top-tools reveal">
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="globalSearch" type="text" placeholder="Search links, documents, phone numbers, sections..." autocomplete="off" />
+        <button id="clearSearch" class="ghost-btn" type="button">Clear</button>
+      </div>
+      <div class="quick-actions">
+        <button class="chip active" data-jump="Welcome">Overview</button>
+        <button class="chip" data-jump="Lenovo URLs">Core Tools</button>
+        <button class="chip" data-jump="Process Documents">Process Docs</button>
+        <button class="chip" data-jump="Policy Documents">Policies</button>
+      </div>
+    </section>
+
+    <main class="layout">
+      <aside class="panel sidebar reveal">
+        <div class="sidebar-top">
+          <div>
+            <div class="sidebar-title">Navigation</div>
+            <div class="sidebar-subtitle">Click any section to expand it in the workspace.</div>
+          </div>
+        </div>
+        <div id="navContainer">
+          <div class="nav-group"><button class="nav-button active" data-section="Welcome"><span>Welcome</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="Lenovo URLs"><span>Lenovo URLs</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="Learning and Development"><span>Learning and Development</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="Process Documents"><span>Process Documents</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="Policy Documents"><span>Policy Documents</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="Toll Free Numbers & Extensions"><span>Toll Free Numbers & Extensions</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="J2W URLs"><span>J2W URLs</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="Our Community"><span>Our Community</span><span class="arrow">↗</span></button></div>
+          <div class="nav-group"><button class="nav-button" data-section="Help Us Improve Together"><span>Help Us Improve Together</span><span class="arrow">↗</span></button></div>
+        </div>
+      </aside>
+
+      <section class="content reveal">
+        <div class="content-card">
+          <div class="content-head">
+            <div>
+              <div class="section-tag">Active Workspace</div>
+              <h2 id="sectionTitle">Welcome</h2>
+              <p id="sectionDescription"></p>
+            </div>
+            <div class="content-stats">
+              <div class="mini-stat">
+                <span id="sectionMetricLabel">Section</span>
+                <strong id="sectionMetricValue">Overview</strong>
+              </div>
+            </div>
+          </div>
+          <div class="content-body" id="sectionBody"></div>
+        </div>
+      </section>
+
+      <aside class="panel right-rail reveal">
+        <div class="updates-head">
+          <div>
+            <h3>Latest Updates</h3>
+            <p>Editable vertical banners for important internal announcements.</p>
+          </div>
+        </div>
+        <div class="banner-stack">
+          <div class="banner red floating-delay-1">
+            <div class="banner-top"><span class="pill">Priority</span><small>Banner 1</small></div>
+            <h4>Training Refresh</h4>
+            <p>Add weekly coaching focus, training schedules, or knowledge refresh alerts here.</p>
+          </div>
+          <div class="banner dark floating-delay-2">
+            <div class="banner-top"><span class="pill">Reminder</span><small>Banner 2</small></div>
+            <h4>Process Reminder</h4>
+            <p>Use this frame for SOP changes, quality checkpoints, escalations, or urgent notices.</p>
+          </div>
+          <div class="banner blue floating-delay-3">
+            <div class="banner-top"><span class="pill">Tools</span><small>Banner 3</small></div>
+            <h4>Tool / App Update</h4>
+            <p>Highlight launches, access changes, outages, or version updates for critical tools.</p>
+          </div>
+          <div class="banner green floating-delay-4">
+            <div class="banner-top"><span class="pill">Team</span><small>Banner 4</small></div>
+            <h4>Recognition / Announcement</h4>
+            <p>Use this for business announcements, achievements, events, or recognition messages.</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <div class="modal" id="docModal">
+    <div class="modal-box">
+      <div class="modal-top">
+        <h3 id="modalTitle">Document Preview</h3>
+        <div class="modal-actions">
+          <a id="directOpen" class="icon-btn" href="#" target="_blank" rel="noopener noreferrer">Open</a>
+          <button class="icon-btn" id="closeModal" type="button">Close</button>
+        </div>
+      </div>
+      <iframe id="docFrame" src="about:blank" title="Document Preview"></iframe>
+    </div>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
